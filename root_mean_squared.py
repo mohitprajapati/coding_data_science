@@ -1,4 +1,5 @@
 # given tuple of list 
+from math import sqrt 
 tup=([1,2], [1, 2])
 tup1=([1,2,3], [3,2,1])
 def rmse(inp_tuple):
@@ -10,7 +11,7 @@ def rmse(inp_tuple):
   print(lst2)
   for i in range(len(lst1)):
     summ+=(lst2[i]-lst1[i])**2
-  return summ/len(lst1)
+  return sqrt(summ/len(lst1))
 
 
 
